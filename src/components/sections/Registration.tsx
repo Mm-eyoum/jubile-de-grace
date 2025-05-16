@@ -76,7 +76,7 @@ const Registration = () => {
       setIsSubmitting(true);
       
       try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbxXIauoj1Y4NBd21SawiUFwxFmCvp8vy2e9xhfx3cvLKveofZd2E_6dbR6gA1Krfdfg-w/exec', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbydTFwvSzBAux-hnFuLMGBZLxULfi04PPDo0OtozxdYeJhKkyA9Vrd7EI_MFh59thudTQ/exec', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData),
