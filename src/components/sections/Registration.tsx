@@ -76,12 +76,9 @@ const Registration = () => {
       setIsSubmitting(true);
       
       try {
-        const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/registration`, {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbxXIauoj1Y4NBd21SawiUFwxFmCvp8vy2e9xhfx3cvLKveofZd2E_6dbR6gA1Krfdfg-w/exec', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
-          },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData),
         });
 
